@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Delete My Data - Easy Video Show</title>
+  <style>
+    body {
+      background-color: black;
+    }
+    h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 3rem;
+  text-shadow: 0 0 10px #fff;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+label {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #fff;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 1rem;
+  font-size: 2rem;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 0 0 10px #fff;
+  outline: none;
+}
+
+input[type="submit"] {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border: none;
+  background-color: #ff00ff;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  text-shadow: 0 0 10px #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: #ff00ff;
+}
+
+.line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #ff00ff;
+  opacity: 0.5;
+  filter: blur(1px);
+  animation: lineAnimation 5s linear infinite;
+}
+
+.line:nth-child(1) {
+  left: 10%;
+}
+
+.line:nth-child(2) {
+  left: 20%;
+}
+
+.line:nth-child(3) {
+  left: 30%;
+}
+
+.line:nth-child(4) {
+  left: 40%;
+}
+
+.line:nth-child(5) {
+  left: 50%;
+}
+
+.line:nth-child(6) {
+  left: 60%;
+}
+
+.line:nth-child(7) {
+  left: 70%;
+}
+
+.line:nth-child(8) {
+  left: 80%;
+}
+
+.line:nth-child(9) {
+  left: 90%;
+}
+
+@keyframes lineAnimation {
+  0% {
+    transform: scaleY(0);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="line"></div>
+  <div class="line"></div>
+  <h1>Delete My Data</h1>
+  <form action="#" method="post">
+    <label for="username">Enter your username:</label>
+    <input type="text" id="username" name="username" placeholder="Username" required>
+    <input type="submit" value="Delete My Data">
+  </form>
+</body>
+</html>

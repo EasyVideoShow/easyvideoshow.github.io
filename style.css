@@ -1,0 +1,62 @@
+body {
+	background-color: #000;
+	background-image: url("neon-lines.png");
+	background-repeat: repeat;
+	color: #fff;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	text-align: center;
+	margin: 50px 0;
+}
+
+h1 {
+	font-size: 48px;
+	text-shadow: 2px 2px #f0f, -2px -2px #0ff;
+}
+
+section {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.image-container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.image-container img {
+	width: 20%;
+	border-radius: 5px;
+}
+
+p {
+	font-size: 24px;
+	line-height: 1.5;
+	margin-bottom: 50px;
+}
+
+.button-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.button {
+	padding: 15px 25px;
+	font-size: 18px;
+	border-radius: 5px;
+	background-color: #fff;
+	color: #000;
+	text-decoration: none;
+	box-shadow: 2px 2px 0 #f0f, -2px -2px 0 #0ff;
+	transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+	background-color: #000;
+	color: #fff;
+	box-shadow: 4px 4px 0 #f0f, -4px -4px 0 #0ff;
+}
